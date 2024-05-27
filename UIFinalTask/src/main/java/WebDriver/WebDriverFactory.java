@@ -21,8 +21,9 @@ public class WebDriverFactory {
     }
 
     public static void initializationWebDriver(){
+        String chromePath = "C:\\Users\\Valentyn\\IdeaProjects\\UIFinalTask\\src\\test\\resources\\chromedriver.exe";
         WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Valentyn\\IdeaProjects\\UIFinalTask\\src\\test\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", chromePath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
