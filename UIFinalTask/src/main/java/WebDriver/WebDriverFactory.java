@@ -28,6 +28,4 @@ public class WebDriverFactory {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://opensource-demo.orangehrmlive.com/");
     }
-
-
 }
